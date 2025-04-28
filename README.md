@@ -1,0 +1,2 @@
+# Machine-Learning-for-Environmental-Insights-A-Triple-Model-Approach-to-Waste-Management-Sentiment
+This repository demonstrates a triple-model machine learning approach designed to optimize waste management and sentiment analysis. The project employs deep learning techniques for waste classification, sentiment evaluation, and text-to-audio conversion, offering scalable insights for sustainable environmental practices and public engagement.
