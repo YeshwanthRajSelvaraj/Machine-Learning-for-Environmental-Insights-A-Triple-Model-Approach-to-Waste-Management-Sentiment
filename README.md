@@ -11,19 +11,19 @@ ________________________________________
 Overview
 This project implements a Sentiment Classification Model using GRU (Gated Recurrent Unit), a powerful RNN variant, combined with Word2Vec embeddings. The system categorizes textual feedback into positive and negative sentiments, unlocking actionable insights from user opinions.
 Applications span across social media monitoring, product feedback analysis, and customer experience management.
-________________________________________
+
 Key Features
 •	Robust Text Preprocessing: Cleaning, normalization, and tokenization of text data.
 •	Semantic Embedding: Word2Vec-based embeddings for capturing contextual word relationships.
 •	Sequential Learning: GRU network architecture ideal for temporal dependencies in text.
 •	Optimized Training: PyTorch-based training using Adam optimizer and cross-entropy loss.
 •	Performance Metrics: Evaluation using classification accuracy.
-________________________________________
+
 Outputs
 •	Trained Word2Vec model
 •	Saved GRU model (.pth file)
 •	Accuracy and loss visualization graphs (optional)
-________________________________________
+
 Performance Summary
 •	Training Accuracy: ~91.2%
 •	Loss Curve: Smooth decline across epochs
@@ -31,12 +31,12 @@ Performance Summary
 o	Robust against noise
 o	Strong sequential dependency learning
 o	Good generalization to unseen data
-________________________________________
+
 Future Enhancements
 •	Expansion to multi-class sentiment (positive, neutral, negative)
 •	Integration of attention mechanisms
 •	Deployment via Flask or FastAPI APIs
-________________________________________
+
 Folder Structure
 sentiment_analysis_gru/
 ├── sentiment_analysis_gru.ipynb      # Complete Jupyter Notebook
@@ -46,7 +46,7 @@ sentiment_analysis_gru/
 ├── README.md                         # Project documentation
 └── dataset/
     └── processed.noemoticon.csv       # Dataset for training/testing
-________________________________________
+```bash
 Local Setup
 # Clone the repository
 git clone https://github.com/your-username/Sentiment-Analysis-GRU.git
@@ -57,11 +57,12 @@ pip install -r requirements.txt
 
 # Run the training script
 python sentiment_gru.py
+```
 ________________________________________
 2. Garbage Classification Using MobileNetV2
 Overview
 This project presents a deep learning-powered solution for automated garbage classification using MobileNetV2. It accelerates smart recycling initiatives by classifying waste images into multiple categories, crucial for advancing sustainable waste management.
-________________________________________
+
 Key Features
 •	Dataset: Kaggle Garbage Classification Dataset
 •	Transfer Learning: MobileNetV2 as feature extractor
@@ -69,12 +70,12 @@ Key Features
 •	Validation Strategy: 70-30 split between training and validation sets
 •	Saved Artifacts: Trained model and class mappings
 •	Web Interface: Gradio application for live garbage classification
-________________________________________
+
 Dataset Details
 •	Source: Garbage Classification Dataset
 •	Classes: Automatically detected from dataset folders
 •	Preprocessing: Augmentations including rotations, flips, zoom, and shifts
-________________________________________
+
 Model Architecture
 •	Base: MobileNetV2 (pretrained on ImageNet)
 •	Custom Head:
@@ -85,7 +86,7 @@ o	Output Layer (Softmax)
 •	Optimizer: Adam
 •	Loss Function: Categorical Crossentropy
 •	Evaluation Metric: Accuracy
-________________________________________
+
 Folder Structure
 waste_dataset/
     ├── train/
@@ -95,7 +96,7 @@ models/
     ├── waste_classification_model.h5
 class_names.txt
 app.py
-________________________________________
+```bash
 Local Setup
 # Install packages
 pip install kaggle gradio tensorflow matplotlib numpy pillow
@@ -113,41 +114,42 @@ python train_model.py
 # Launch Gradio interface
 python app.py
 Note: If using Google Colab, run all cells sequentially for automatic setup and deployment.
+```
 ________________________________________
 3. Text-to-Voice Conversion System
 Overview
 The Text-to-Voice Conversion System leverages deep learning to transform textual feedback into natural-sounding speech, significantly enhancing accessibility and user engagement.
-________________________________________
+
 Key Features
 •	Advanced TTS Technology: Converts written input into realistic speech.
 •	Dynamic Model Selection: Tacotron2 for GPU systems, gTTS for CPU fallback.
 •	Interactive Web App: Gradio-based easy-to-use web interface.
 •	Accessibility-Focused: Ideal for users with visual impairments or reading challenges.
-________________________________________
+
 Technical Architecture
 •	Deep Learning Model: Tacotron2 (GPU)
 •	Lightweight Alternative: Google TTS (gTTS) for CPU
 •	Frameworks Used: PyTorch, Gradio, gTTS
-________________________________________
+
 Folder Structure
 text_to_voice/
 ├── text_to_voice.py
 ├── requirements.txt
 └── README.md
-________________________________________
+```bash
 Local Setup
 # Install packages
 pip install gradio gtts torch torchvision torchaudio
 
 # Run the application
 python text_to_voice.py
-________________________________________
+```
 Potential Applications
 •	Customer support chatbots
 •	Assistive tools for visually impaired users
 •	E-commerce product review readers
 •	Educational platforms with auditory support
-________________________________________
+
 Future Enhancements
 •	Multi-language support
 •	Voice tone modulation
